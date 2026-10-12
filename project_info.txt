@@ -1,0 +1,17 @@
+| File                                    | Responsibility                                                     |
+| --------------------------------------- | ------------------------------------------------------------------ |
+| `app.py`                                | Streamlit user interface                                           |
+| `.env`                                  | Stores ServiceNow credentials and the OpenAI API key               |
+| `.gitignore`                            | Prevents secrets and unnecessary files from being committed to Git |
+| `requirements.txt`                      | Lists the Python dependencies                                      |
+| `integrations/servicenow_client.py`     | Connects to your live ServiceNow instance through REST APIs        |
+| `investigation/problem_analyzer.py`     | Understands the developer's technical question                     |
+| `investigation/investigation_engine.py` | Coordinates the investigation and retrieves relevant evidence      |
+| `investigation/root_cause_analyzer.py`  | Analyzes the evidence and generates root-cause hypotheses          |
+| `retrieval/document_loader.py`          | Loads ServiceNow documentation                                     |
+| `retrieval/vector_store.py`             | Creates and manages the vector index                               |
+| `retrieval/retriever.py`                | Retrieves relevant documentation and indexed configuration         |
+| `memory/conversation.py`                | Maintains investigation conversation history                       |
+| `guardrails/validators.py`              | Validates inputs, tool access, and generated responses             |
+| `evaluation/evaluate.py`                | Evaluates retrieval and root-cause analysis quality                |
+| `__init__.py`                           | Marks Python directories as packages                               |
